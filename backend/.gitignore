@@ -3,6 +3,7 @@ node_modules/
 
 # TypeScript build output
 build/
+dist/
 
 # Logs
 *.log
@@ -14,6 +15,7 @@ Thumbs.db
 
 # Environment variables
 .env
+config.env
 
 # IDE/Editor files
 .vscode/
