@@ -4,6 +4,7 @@ import globalErrorHandler from './utils/errorController.js';
 import cookieParser from 'cookie-parser';
 import cors from 'cors';
 import {router as userRouter} from './user/userRouter.js';
+import {router as tripRouter} from './trip/tripRouter.js';
 export const app = express();
 
 
@@ -22,6 +23,7 @@ app.use(cors({
 //Routes
 
 app.use('/esadora/api/users',userRouter);
+app.use('/esadora/api/trips',tripRouter);
 
 //Error handler middleware
 
